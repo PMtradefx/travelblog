@@ -1,0 +1,38 @@
+body{
+    background: black;
+}
+.bg-black{
+    background-color: black;
+}
+.card-project:hover{
+    border: 1px solid white;
+    cursor: pointer;
+}
+.blogxx{
+    display: flex;
+    padding-top: 15px;
+}
+.cont-blogx{
+    padding-left: 15px;
+}
+.img-blogx img{
+    width: 400px;
+}
+.img-blogd img  {
+    width: 1200px;
+}
+.tit-blog{
+    padding-top: 15px;
+}
+.tit-blog h1{
+    font-size: 75px;
+}
+.img-blogd{
+    padding-top: 15px;
+}
+.des-blogxx{
+    padding-top: 15px;
+}
+.logo-tam{
+    font-size: 60px;
+}

@@ -1,0 +1,26 @@
+
+{% extends 'layout.html' %}
+{% block content %}
+{% load static %}
+<div class="row">
+    <h1>Blog</h1>
+    {% for post in posts %}
+    <div class="blogxx">
+        <div class="img-blogx">
+            <img src="{{post.image.url}}" alt="{{post.title}}">
+        </div>
+        <div class="cont-blogx">
+            <h2>
+                {{post.title}}
+            </h2>
+            <h3>{{post.date}}</h3>
+            <p>
+                {{post.description|safe|truncatechars:100}}
+            </p>
+            <a class="text-light" href="{% url 'blog:post_detail' post.id %}"> Detalle</a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}
